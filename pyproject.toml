@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "uartsync"
+version = "0.1.0"
+description = "Automatic UART baud rate detection tool"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+dependencies = [
+    "pyserial>=3.5"
+]
+
+[project.scripts]
+uartsync = "uartsync.cli:main"
+
+[tool.setuptools]
+packages = ["uartsync"]
