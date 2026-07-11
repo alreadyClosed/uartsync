@@ -26,3 +26,8 @@ uninstall-system:
 
 clean:
 	rm -rf $(VENV) build dist *.egg-info uartsync/__pycache__
+
+help:
+	echo '\n Options: install install-system uninstall uninstall-system venv clean help'
+list:
+	echo '\n Options: install install-system uninstall uninstall-system venv clean help'
