@@ -29,5 +29,7 @@ clean:
 
 help:
 	echo '\n Options: install install-system uninstall uninstall-system venv clean help'
+
 list:
 	echo '\n Options: install install-system uninstall uninstall-system venv clean help'
+
