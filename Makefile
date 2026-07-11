@@ -22,7 +22,7 @@ uninstall:
 	echo '\nIf uninstalled failed, try using "make uninstall-system"'
 
 uninstall-system:
-	python3 -m pip uninstall -y uartsync || true
+	python3 -m pip uninstall -y uartsync --break-system-packages || true
 
 clean:
 	rm -rf $(VENV) build dist *.egg-info uartsync/__pycache__
