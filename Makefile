@@ -11,7 +11,7 @@ venv:
 
 install: venv
 	$(PIP) install .
-	echo '\nIf installed failed, try using "make install-system"'
+	@echo '\nIf installed failed, try using "make install-system"'
 
 install-system:
 	python3 -m pip install -r requirements.txt --break-system-packages
@@ -19,7 +19,7 @@ install-system:
 
 uninstall:
 	pip uninstall -y uartsync || true
-	echo '\nIf uninstalled failed, try using "make uninstall-system"'
+	@echo '\nIf uninstalled failed, try using "make uninstall-system"'
 
 uninstall-system:
 	python3 -m pip uninstall -y uartsync --break-system-packages || true
@@ -28,5 +28,5 @@ clean:
 	rm -rf $(VENV) build dist *.egg-info uartsync/__pycache__
 
 help:
-	echo '\n Options: install install-system uninstall uninstall-system venv clean help'
+	@echo '\n Options: install install-system uninstall uninstall-system venv clean help'
 
