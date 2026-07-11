@@ -1,4 +1,4 @@
-.PHONY: install install-system uninstall venv clean
+.PHONY: install install-system uninstall uninstall-system venv clean
 
 VENV := .venv
 PY := $(VENV)/bin/python
@@ -11,6 +11,7 @@ venv:
 
 install: venv
 	$(PIP) install .
+	echo 'If installed failed, try using "make install-system"'
 
 install-system:
 	python3 -m pip install -r requirements.txt --break-system-packages
@@ -18,6 +19,10 @@ install-system:
 
 uninstall:
 	pip uninstall -y uartsync || true
+	echo 'If uninstalled failed, try using "make uninstall-system"'
+
+uninstall-system:
+	python3 -m pip uninstall -y uartsync || true
 
 clean:
 	rm -rf $(VENV) build dist *.egg-info uartsync/__pycache__
