@@ -1,5 +1,5 @@
 # UARTSYNC
-### A tool made to enumerate UART speeds
+### A tool made to enumerate UART USB-TO-TLL speeds
 
 ## How to use:
 
