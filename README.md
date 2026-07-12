@@ -73,5 +73,5 @@ or
 uartsync /dev/ttyUSB0 --repeat 10 --probe-timeout 1000 --min-bytes 10
 ```
 
-### ⚠️ Warning This isn't very accurate, if UART doesn't give a lot of data for a while it could be very off. Do not blindly trust the tool without verification. ⚠️
+### ⚠️ Warning This isn't very accurate, if UART doesn't give a lot of data for a while, it could be very off. Do not blindly trust the tool without verification. ⚠️
 
